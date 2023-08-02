@@ -1,0 +1,17 @@
+.hero-section {
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+}
+
+.hero-div {
+  width: 799px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
