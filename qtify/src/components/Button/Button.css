@@ -1,0 +1,15 @@
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  background-color: var(--black-color);
+  color: var(--primary-color);
+  width: 170px;
+  height: 47px;
+  border-radius: 12px;
+  padding: 10px, 16px, 10px, 16px;
+  border-style: none;
+  outline-style: none;
+}
