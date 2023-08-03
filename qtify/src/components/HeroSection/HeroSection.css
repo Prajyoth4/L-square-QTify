@@ -8,6 +8,7 @@
   width: 799px;
   display: flex;
   justify-content: center;
+  gap: 2em;
 }
 
 .hero-text {

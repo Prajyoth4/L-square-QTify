@@ -5,11 +5,12 @@
 
 .search-bar {
   display: flex;
-  width: 568px;
+  width: 50vw;
   height: 48px;
   border-radius: 8px;
   border: 1px solid;
   background-color: var(--white-color);
+  justify-content: stretch;
 }
 
 .search-icon-div {
@@ -22,7 +23,7 @@
 }
 
 .input-search {
-  width: 502px;
+  width: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   border-style: none;

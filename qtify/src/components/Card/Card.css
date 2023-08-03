@@ -1,0 +1,29 @@
+.card-wrapper {
+  width: 10em;
+  color: var(--white-color);
+  text-align: left;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 232px;
+}
+
+.card {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  height: 200px;
+}
+
+.follows {
+  background-color: var(--black-color);
+  width: fit-content;
+  font-size: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 3px 6px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 85%;
+}
