@@ -6,9 +6,9 @@ const Card = ({ src, follows, title }) => {
     <div className="card-wrapper">
       <div className="card">
         <img src={src} alt="card" />
-        <div className="follows">100M follows</div>
+        <div className="follows">{follows} follows</div>
       </div>
-      New Bollywood
+      {title}
     </div>
   );
 };

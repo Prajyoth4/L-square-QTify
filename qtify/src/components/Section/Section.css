@@ -1,0 +1,12 @@
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-wrapper {
+  padding: 2em;
+}
+
+.section-type {
+  color: var(--white-color);
+}
