@@ -1,0 +1,9 @@
+.left-icon {
+  width: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 1em;
+  z-index: 10;
+  transform: translateY(-50%);
+}
