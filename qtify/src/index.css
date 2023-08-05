@@ -72,4 +72,5 @@ h6 {
 
 body {
   background-color: var(--black-color);
+  color: var(--white-color);
 }

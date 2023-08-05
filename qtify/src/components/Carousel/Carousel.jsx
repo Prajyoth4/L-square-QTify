@@ -9,9 +9,9 @@ import Card from "../Card/Card";
 import LeftNav from "./LeftNav/LeftNav";
 import RightNav from "./RightNav/RightNav";
 
-const Carousel = ({ data }) => {
+const Carousel = ({ data, song }) => {
   return (
-    <div>
+    <div className="carousel">
       <Swiper
         spaceBetween={40}
         initialSlide={0}
@@ -23,13 +23,22 @@ const Carousel = ({ data }) => {
       >
         <LeftNav />
         <RightNav />
-        {data.map((ele) => {
-          return (
-            <SwiperSlide>
-              <Card src={ele.image} follows={ele.follows} title={ele.title} />
-            </SwiperSlide>
-          );
-        })}
+        {data ? (
+          data.map((ele) => {
+            return (
+              <SwiperSlide>
+                <Card
+                  src={ele.image}
+                  number={song ? ele.likes : ele.follows}
+                  text={song ? "likes" : "follows"}
+                  title={ele.title}
+                />
+              </SwiperSlide>
+            );
+          })
+        ) : (
+          <></>
+        )}
       </Swiper>
     </div>
   );
