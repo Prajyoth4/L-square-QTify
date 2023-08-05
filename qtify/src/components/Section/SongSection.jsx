@@ -36,6 +36,7 @@ const SongSection = ({ type, data }) => {
   }, [data]);
 
   const handleChange = (event, newValue) => {
+    console.log("handleChange");
     setGenreValue(newValue);
   };
 
@@ -57,38 +58,17 @@ const SongSection = ({ type, data }) => {
             }}
             label="All"
           />
-          <Tab
-            sx={{
-              color: "white",
-              "&.Mui-selected": { color: "white" },
-            }}
-            className="songs-tab"
-            label="Rock"
-          />
-          <Tab
-            sx={{
-              color: "white",
-              "&.Mui-selected": { color: "white" },
-            }}
-            className="songs-tab"
-            label="Pop"
-          />
-          <Tab
-            sx={{
-              color: "white",
-              "&.Mui-selected": { color: "white" },
-            }}
-            className="songs-tab"
-            label="Jazz"
-          />
-          <Tab
-            sx={{
-              color: "white",
-              "&.Mui-selected": { color: "white" },
-            }}
-            className="songs-tab"
-            label="Blues"
-          />
+          {genres.map((ele) => {
+            return (
+              <Tab
+                sx={{
+                  color: "white",
+                  "&.Mui-selected": { color: "white" },
+                }}
+                label={ele.label}
+              />
+            );
+          })}
         </Tabs>
         <div className="carousel-wrapper">
           {genreValue === 0 ? (

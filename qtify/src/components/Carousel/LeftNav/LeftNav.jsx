@@ -7,6 +7,7 @@ const LeftNav = () => {
   const [isBeg, setIsBeg] = useState(true);
   useEffect(() => {
     swiper.on("slideChange", () => {
+      //console.log("slideChange");
       setIsBeg(swiper.isBeginning);
     });
   }, []);

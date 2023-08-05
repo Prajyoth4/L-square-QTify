@@ -8,7 +8,13 @@ const Grid = ({ data }) => {
       {data ? (
         data.map((ele) => {
           return (
-            <Card src={ele.image} title={ele.title} follows={ele.follows} />
+            <Card
+              src={ele.image}
+              title={ele.title}
+              number={ele.follows}
+              text={"follows"}
+              tooltip={`${ele.songs.length} songs`}
+            />
           );
         })
       ) : (

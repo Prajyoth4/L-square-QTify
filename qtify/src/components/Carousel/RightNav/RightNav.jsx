@@ -7,6 +7,7 @@ const RightNav = () => {
   const [isEnd, setIsEnd] = useState(false);
   useEffect(() => {
     swiper.on("slideChange", () => {
+      //console.log("slideChange");
       setIsEnd(swiper.isEnd);
     });
   }, []);

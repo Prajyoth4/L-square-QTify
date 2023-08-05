@@ -32,6 +32,7 @@ const Carousel = ({ data, song }) => {
                   number={song ? ele.likes : ele.follows}
                   text={song ? "likes" : "follows"}
                   title={ele.title}
+                  tooltip={song ? false : `${ele.songs.length} songs`}
                 />
               </SwiperSlide>
             );

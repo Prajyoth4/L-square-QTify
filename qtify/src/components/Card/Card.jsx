@@ -1,16 +1,19 @@
 import React from "react";
 import "./Card.css";
+import { Tooltip } from "@mui/material";
 
-const Card = ({ src, number, text, title }) => {
+const Card = ({ src, number, text, title, tooltip }) => {
   return (
     <div className="card-wrapper">
-      <div className="card">
-        <img src={src} alt="card" />
-        <div className="follows">
-          {number} {" " + text}
+      <Tooltip title={tooltip} placement="top">
+        <div className="card">
+          <img src={src} alt="card" />
+          <div className="follows">
+            {number} {" " + text}
+          </div>
         </div>
-      </div>
-      {title}
+        {title}
+      </Tooltip>
     </div>
   );
 };

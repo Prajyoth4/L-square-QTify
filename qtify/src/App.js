@@ -33,7 +33,7 @@ function App() {
     generateTopGrid();
     generateNewGrid();
     generateSongGrid();
-  });
+  }, []);
 
   return (
     <div className="App">
