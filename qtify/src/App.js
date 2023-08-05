@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { getAlbums, getSongs } from "./components/api/api";
 import Section from "./components/Section/Section";
 import SongSection from "./components/Section/SongSection";
+import FaqAccordion from "./components/Accordion/Accordion";
 
 function App() {
   const [topAlbumData, setTopAlbumData] = useState([]);
@@ -41,6 +42,7 @@ function App() {
       <Section type={"Top Albums"} data={topAlbumData} />
       <Section type={"New Albums"} data={newAlbumData} />
       <SongSection type={"Songs"} data={songData} />
+      <FaqAccordion />
     </div>
   );
 }

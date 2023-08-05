@@ -5,8 +5,7 @@ import Tab from "@mui/material/Tab";
 
 import Carousel from "../Carousel/Carousel";
 import { getGenres } from "../api/api";
-import style from "./SongSection.module.css";
-import { green } from "@mui/material/colors";
+import "./Section.css";
 
 const SongSection = ({ type, data }) => {
   const [genreValue, setGenreValue] = useState(0);
@@ -34,14 +33,14 @@ const SongSection = ({ type, data }) => {
   useEffect(() => {
     setSongData({ All: data });
     generateGenreData();
-  }, []);
+  }, [data]);
 
   const handleChange = (event, newValue) => {
     setGenreValue(newValue);
   };
 
   return (
-    <div className="section-wrapper">
+    <div className="song-section-wrapper">
       <div className="grid-header">
         <h3 className="section-type">{type}</h3>
       </div>

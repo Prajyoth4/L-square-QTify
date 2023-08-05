@@ -1,0 +1,29 @@
+.accordion-wrapper,
+.faq-wrapper {
+  padding: 2em;
+}
+
+.accordion-wrapper {
+  padding-left: 5em;
+  padding-right: 5em;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.MuiAccordion-root {
+  /* background-color: transparent; */
+  border-radius: 10px;
+}
+
+.MuiAccordionSummary-root {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  border-radius: 10px;
+  border: 1px solid var(--white-color);
+}
+
+.MuiAccordionDetails-root {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-radius: 10px;
+}

@@ -3,8 +3,14 @@
   justify-content: space-between;
 }
 
-.section-wrapper {
+.section-wrapper,
+.song-section-wrapper {
   padding: 2em;
+}
+
+.song-section-wrapper {
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .section-type {
